@@ -1,8 +1,18 @@
+.header {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(to left, #2805f2, #05cbf2);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 .task-list {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 15px;
+    margin-top: 20px;
 }
 
 .task {
