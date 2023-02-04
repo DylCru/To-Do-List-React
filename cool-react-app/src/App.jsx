@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import tasksData from './tasks'
-import Task from './Task'
+import Task from './components/Task'
 
 function App() {
   const [tasks, setTasks] = useState(tasksData) 
