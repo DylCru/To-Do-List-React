@@ -1,0 +1,27 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    border: solid;
+}
+
+.task {
+    border: solid;
+    text-align: center;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.priority-high {
+    background-color: red;
+}
+
+.priority-medium {
+    background-color: orange;
+}
+
+.priority-low {
+    background-color: green;
+}
