@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import tasksData from './tasks'
 import Task from './components/Task'
+import Header from './components/Header'
 
 function App() {
   const [tasks, setTasks] = useState(tasksData) 
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <div className='task-list'>
         {allTasks}
       </div>
