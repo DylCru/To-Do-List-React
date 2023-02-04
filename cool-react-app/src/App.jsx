@@ -34,7 +34,9 @@ function App() {
 
   return (
     <div className="App">
-      {allTasks}
+      <div className='task-list'>
+        {allTasks}
+      </div>
       <div className="add-task">
         <input type="text" name="task" value={newTask.task} onChange={handleChange} placeholder="Task Name"
         />
