@@ -3,16 +3,15 @@ import React, {useState} from "react";
 export default function task(props) {
     let priorityColour;
     switch(props.priority) {
-        case "high":
+        case "High":
             priorityColour = {backgroundColor: "red"}
             break
-        case "medium":
+        case "Medium":
             priorityColour = {backgroundColor: "orange"}
             break
-        case "low" :
+        case "Low" :
             priorityColour = {backgroundColor: "green"}
     }
-
 
     return (
         <div className="task" style={priorityColour}>
