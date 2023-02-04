@@ -20,7 +20,7 @@ function App() {
   })
 
   function handleChange(event) {
-    const {name, value, checked, type} = event.target
+    const {name, value} = event.target
     setNewTask(prev => {
       return {...prev, [name] : value}
     })
