@@ -40,13 +40,13 @@ function App() {
       <div className="add-task">
         <input type="text" name="task" value={newTask.task} onChange={handleChange} placeholder="Task Name"
         />
-        <input type="radio" name="priority" value="Low" onChange={handleChange}
+        <input type="radio" name="priority" value="low" onChange={handleChange}
         />
         <label htmlFor="low">Low</label>
-        <input type="radio" name="priority" value="Medium" onChange={handleChange}
+        <input type="radio" name="priority" value="medium" onChange={handleChange}
         />
         <label htmlFor="medium">Medium</label>
-        <input type="radio" name="priority" value="High" onChange={handleChange}
+        <input type="radio" name="priority" value="high" onChange={handleChange}
         />
         <label htmlFor="high">High</label>
         <button onClick={addTask}>Add Task</button>
