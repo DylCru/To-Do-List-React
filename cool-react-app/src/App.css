@@ -8,10 +8,10 @@
 }
 
 .task {
-    border: solid;
     text-align: center;
     width: 300px;
     border-radius: 15px;
+    color: white;
 }
 
 .priority-high {
