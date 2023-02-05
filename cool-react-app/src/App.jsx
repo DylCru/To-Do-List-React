@@ -4,6 +4,7 @@ import './App.css'
 import tasksData from './tasks'
 import Task from './components/Task'
 import Header from './components/Header'
+import AddTask from './components/AddTask'
 
 function App() {
   const [tasks, setTasks] = useState(tasksData) 
@@ -39,20 +40,7 @@ function App() {
       <div className='task-list'>
         {allTasks}
       </div>
-      <div className="add-task">
-        <input type="text" name="task" value={newTask.task} onChange={handleChange} placeholder="Task Name"
-        />
-        <input type="radio" name="priority" value="Low" onChange={handleChange}
-        />
-        <label htmlFor="low">Low</label>
-        <input type="radio" name="priority" value="Medium" onChange={handleChange}
-        />
-        <label htmlFor="medium">Medium</label>
-        <input type="radio" name="priority" value="High" onChange={handleChange}
-        />
-        <label htmlFor="high">High</label>
-        <button onClick={addTask}>Add Task</button>
-      </div>
+      <AddTask addTask={addTask} newTask={newTask} handleChange={handleChange} />
       <div className='task--preview'>
         <p>{newTask.task}</p>
       </div>
