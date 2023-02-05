@@ -41,9 +41,6 @@ function App() {
         {allTasks}
       </div>
       <AddTask addTask={addTask} newTask={newTask} handleChange={handleChange} />
-      <div className='task--preview'>
-        <p>{newTask.task}</p>
-      </div>
     </div>
 
   )
