@@ -8,10 +8,10 @@ export default function AddTask(props) {
     }
 
     const addClass = shown ? "new-task-show" : "new-task-hide"
-    
+
     return (
     <div className={addClass}>
-        <div className="toggle" onClick={toggle}>{shown ? '⬆' : '⬇'}</div>
+        <div className="toggle" onClick={toggle}>{shown ? '⬇' : '⬆'}</div>
         <div className="add-task">
             <input className="task-name" type="text" name="task" value={props.newTask.task} onChange={props.handleChange} placeholder="Task Name"/>
 
