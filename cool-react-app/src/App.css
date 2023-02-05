@@ -22,14 +22,27 @@
     color: white;
 }
 
-.priority-high {
-    background-color: red;
+.add-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 15px;
+    padding: 10px;
+    background-color: gray;
+    color: black;
+    
+    
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+
 }
 
-.priority-medium {
-    background-color: orange;
-}
-
-.priority-low {
-    background-color: green;
+.prio-select {
+    display: flex;
+    flex-direction: column;
 }
