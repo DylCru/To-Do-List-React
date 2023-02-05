@@ -1,6 +1,10 @@
 import React, {useState} from "react";
 
 export default function task(props) {
+    const [expanded, setExpanded] = useState(false)
+
+    const taskClass = expanded ? "task large" : "task"
+
     let priorityColour;
     switch(props.priority) {
         case "High":
@@ -13,8 +17,12 @@ export default function task(props) {
             priorityColour = {backgroundColor: "green"}
     }
 
+    function expand() {
+        setExpanded(prev => !prev)
+    }
+
     return (
-        <div className="task" style={priorityColour}>
+        <div className={taskClass} style={priorityColour} onClick={expand}>
             <h3 className="task--name">{props.task}</h3>
             <h4 className="task--priority">{props.priority}</h4>
         </div>
