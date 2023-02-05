@@ -44,10 +44,11 @@
     align-items: center;
 
     position: fixed;
-    left: 40%;
-    bottom: -95px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: -160px;
     margin: 0 auto;
-    transition: bottom 0.5s ease-out;
+    transition: bottom 0.6s ease-out;
 }
 
 .new-task-show {
@@ -56,10 +57,11 @@
     align-items: center;
 
     position: fixed;
-    left: 40%;
-    bottom: 20px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: -30px;
     margin: 0 auto;
-    transition: bottom 0.5s ease-out;
+    transition: bottom 0.6s ease-out;
 }
 
 .toggle {
