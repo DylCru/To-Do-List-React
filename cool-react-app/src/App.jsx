@@ -9,16 +9,16 @@ import AddTask from './components/AddTask'
 function App() {
   const [tasks, setTasks] = useState(tasksData) 
 
+  const [newTask, setNewTask] = useState({
+    task: "", priority: ""
+  })
+
   const allTasks = tasks.map(x => {
     return <Task
               key={x.id}
               task={x.task}
               priority={x.priority}
             />
-  })
-
-  const [newTask, setNewTask] = useState({
-    task: "", priority: ""
   })
 
   function handleChange(event) {
