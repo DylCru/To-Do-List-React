@@ -29,8 +29,8 @@ export default function task(props) {
             </div>
             {expanded && 
             <div className="task--tools">
-                <div className="task--complete">✅ Complete Task</div>
-                <div className="task--delete">❎ Delete Task</div>
+                <div className="task--tool">✅ Complete Task</div>
+                <div className="task--tool">❎ Delete Task</div>
             </div>
             }
         </div>
