@@ -90,3 +90,23 @@
     display: flex;
     flex-direction: column;
 }
+
+.task--tool {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    animation: fadein 0.5s forwards;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+
+.task--tools {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
