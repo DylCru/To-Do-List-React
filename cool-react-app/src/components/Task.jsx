@@ -18,8 +18,10 @@ export default function task(props) {
             priorityColour = {backgroundColor: "green"}
     }
 
-    function expand() {
-        setExpanded(prev => !prev)
+    function expand(event) {
+        if (!(event.target.className == "task--tool")) {
+            setExpanded(prev => !prev)
+        }
     }
 
     function complete() {
