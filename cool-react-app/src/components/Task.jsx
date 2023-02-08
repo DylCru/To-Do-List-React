@@ -23,12 +23,15 @@ export default function task(props) {
 
     return (
         <div className={taskClass} style={priorityColour} onClick={expand}>
-            <h3 className="task--name">{props.task}</h3>
-            <h4 className="task--priority">{props.priority}</h4>
-            {expanded && <div className="task--tools">
-                            <div className="task--complete">✅ Complete Task</div>
-                            <div className="task--delete">❎ Delete Task</div>
-                        </div>
+            <div className="task--info">
+                <h3 className="task--name">{props.task}</h3>
+                <h4 className="task--priority">{props.priority}</h4>
+            </div>
+            {expanded && 
+            <div className="task--tools">
+                <div className="task--complete">✅ Complete Task</div>
+                <div className="task--delete">❎ Delete Task</div>
+            </div>
             }
         </div>
     )
