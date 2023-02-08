@@ -25,10 +25,11 @@ export default function task(props) {
         <div className={taskClass} style={priorityColour} onClick={expand}>
             <h3 className="task--name">{props.task}</h3>
             <h4 className="task--priority">{props.priority}</h4>
-            <div className="task--tools">
-                 <div className="task--complete">✅ Complete Task</div>
-                 <div className="task--delete">❎ Delete Task</div>
-            </div>
+            {expanded && <div className="task--tools">
+                            <div className="task--complete">✅ Complete Task</div>
+                            <div className="task--delete">❎ Delete Task</div>
+                        </div>
+            }
         </div>
     )
 }
