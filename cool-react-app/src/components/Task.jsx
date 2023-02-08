@@ -2,6 +2,7 @@ import React, {useState} from "react";
 
 export default function task(props) {
     const [expanded, setExpanded] = useState(false)
+    const [completed, setCompleted] = useState(false)
 
     const taskClass = expanded ? "task large" : "task"
 
@@ -21,6 +22,10 @@ export default function task(props) {
         setExpanded(prev => !prev)
     }
 
+    function complete() {
+        setCompleted(prev => !prev)
+    }
+
     return (
         <div className={taskClass} style={priorityColour} onClick={expand}>
             <div className="task--info">
@@ -29,7 +34,7 @@ export default function task(props) {
             </div>
             {expanded && 
             <div className="task--tools">
-                <div className="task--tool">✅ Complete Task</div>
+                <div className="task--tool" onClick={complete}>✅ Complete Task</div>
                 <div className="task--tool">❎ Delete Task</div>
             </div>
             }
