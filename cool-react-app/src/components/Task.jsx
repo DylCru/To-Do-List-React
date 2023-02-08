@@ -34,7 +34,7 @@ export default function task(props) {
             </div>
             {expanded && 
             <div className="task--tools">
-                <div className="task--tool" onClick={complete}>✅ Complete Task</div>
+                <div className="task--tool" onClick={complete}>✅ {completed ? "Set Task as Incompleted" : "Set Task as Completed"}</div>
                 <div className="task--tool">❎ Delete Task</div>
             </div>
             }
